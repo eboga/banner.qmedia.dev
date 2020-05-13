@@ -6,6 +6,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
     <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+    <script async custom-element="amp-consent" src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"></script>
 
     <amp-analytics type="gtag" data-credentials="include">
         <script type="application/json">
@@ -80,5 +81,22 @@
 
         </div>
     </div>
+
+        <amp-consent layout="nodisplay" id="consent-element">
+            <script type="application/json">
+                {
+                    "consentInstanceId": "my-consent",
+                    "consentRequired": "remote",
+                    "checkConsentHref": "https://example.com/api/check-consent",
+                    "promptUI": "consent-ui",
+                    "onUpdateHref": "https://example.com/update-consent"
+                }
+            </script>
+            <div id="consent-ui">
+                <button on="tap:consent-element.accept" role="button">Accept</button>
+                <button on="tap:consent-element.reject" role="button">Reject</button>
+                <button on="tap:consent-element.dismiss" role="button">Dismiss</button>
+            </div>
+        </amp-consent>
 </body>
 </html>
