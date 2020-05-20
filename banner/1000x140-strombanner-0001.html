@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+
+        <style>
+            :root {
+                --white-100: rgba(255,255,255,1);
+                --black-10: rgba(0,0,0,.1);
+                --black-20: rgba(0,0,0,.2);
+                --black-30: rgba(0,0,0,.3);
+                --black-90: rgba(0,0,0,.9);
+            }
+            * {
+                box-sizing: border-box;
+
+            }
+            html {
+                font: 16px/1.5 sans-serif;
+                margin: 0;
+                padding: 0;
+                /*background: var(--black-20);*/
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .wrapper {
+                /*margin: 0 auto;*/
+                /*padding: 1rem .5rem ;*/
+                /*max-width: 62.5rem;*/
+                /*width: 62.5rem;*/
+                /*background: var(--white-100);*/
+            }
+            .banner-left {
+                width: 30%;
+                float: left;
+                background: #efefef;
+            }
+            .banner-right {
+                width: 70%;
+                float: left;
+                background: #ccc;
+            }
+            .banner-right form {
+                display: flex;
+                justify-content: space-between;
+            }
+            .form-left {
+                /*width: 30%;*/
+                /*float: left;*/
+            }
+            .form-center {
+                /*width: 30%;*/
+                /*float: left;*/
+            }
+            .form-right {
+                /*width: 40%;*/
+                /*float: right;*/
+
+            }
+
+        </style>
+
+    </head>
+    <body>
+            <div class="wrapper">
+                <div class="banner-left">
+                    <div class="c-Action-title">Stromanbieter vergleichen und bis zu <strong>500 &euro; im Jahr</strong> sparen.</div>
+                </div>
+                <div class="banner-right">
+                    <form action="https://www.bbx.de/strom/vergleichsrechner/" method="get">
+                        <div class="form-left">
+                            <div class="c-Action-legend">
+                                <span class="text">Verbrauch</span>
+                                <div class="c-Tooltip">
+                                    <svg class="c-Tooltip-elem" width="13" height="13" fill="var(--jelly-036)"><use xlink:href="#svg-info"></use></svg>
+                                    <div class="c-Tooltip-hoverbox">Veniam sint veniam do deserunt pariatur laborum.</div>
+                                </div>
+                            </div>
+                            <div class="c-Action-input o-FormText">
+                                <div class="o-FormText-wrapper">
+                                    <input class="o-FormText-input" placeholder="2000" name="c24pp_totalconsumption" type="number">
+                                </div>
+                                <div class="o-FormText-label">kWh/Jahr</div>
+                            </div>
+                        </div>
+                        <div class="form-center">
+                            <div class="c-Action-legend">
+                                <span>Postleitzahl</span>
+                                <div class="c-Tooltip">
+                                    <svg class="c-Tooltip-elem" width="13" height="13" fill="var(--jelly-036)"><use xlink:href="#svg-info"></use></svg>
+                                    <div class="c-Tooltip-hoverbox">Veniam sint veniam do deserunt pariatur laborum.</div>
+                                </div>
+                            </div>
+                            <div class="c-Action-input o-FormText">
+                                <input class="o-FormText-input" placeholder="z.B. 20095" name="c24pp_zipcode" type="number">
+                            </div>
+                        </div>
+
+                        <div class="form-right">
+                            <button class="c-Action-submit c-Btn" type="submit">Jetzt vergleichen</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+    </body>
+</html>
+
