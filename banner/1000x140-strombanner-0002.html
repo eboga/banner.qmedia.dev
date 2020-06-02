@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #BBXActionStrom {
+            background-color: rgba(231, 217, 180, 0.3);
+            box-sizing: border-box;
+            color: rgb(37, 37, 37);
+            display: flex;
+            flex-grow: 1;
+            font-family: "Segoe UI", sans-serif;
+            padding: 34px 15px;
+        }
+
+        @media (min-width: 992px) {
+            #BBXActionStrom {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        #BBXActionStrom *,
+        #BBXActionStrom *::after,
+        #BBXActionStrom *::before {
+            box-sizing: inherit;
+        }
+
+
+
+
+
+
+        #BBXActionStrom .bbx-FormText {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            position: relative;
+        }
+
+
+
+        #BBXActionStrom .bbx-FormText-input,
+        #BBXActionStrom .bbx-FormText-label {
+            font-size: 16px;
+            height: auto;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+
+
+        #BBXActionStrom .bbx-FormText-input {
+            border: 0;
+            background-color: transparent;
+            color: rgb(37, 37, 37);
+            padding: 8px 15px 8px 15px;
+            width: 100%;
+        }
+
+        #BBXActionStrom .bbx-FormText-input::placeholder {
+            color: rgba(37, 37, 37, 0.6);
+        }
+
+        #BBXActionStrom .bbx-FormText-input:focus {
+            outline: none;
+        }
+
+        #BBXActionStrom .bbx-FormText-input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        #BBXActionStrom .bbx-FormText-input[type=number]::-webkit-inner-spin-button,
+        #BBXActionStrom .bbx-FormText-input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+        #BBXActionStrom .bbx-FormText-label {
+            color: rgba(37, 37, 37, 0.6);
+            padding: 8px 15px 8px 0;
+        }
+
+
+
+
+
+        #BBXActionStrom .bbx-Popover {
+            position: relative;
+        }
+
+        #BBXActionStrom .bbx-Popover-body {
+            background-color: #fff;
+            border: 0;
+            bottom: calc(100% + 10px);
+            box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.2);
+            cursor: default;
+            display: none;
+            font-size: 15px;
+            font-weight: 400;
+            left: 0;
+            line-height: 1.4;
+            max-width: 450px;
+            min-width: 250px;
+            opacity: 0;
+            padding: 16px;
+            position: absolute;
+            text-align: left;
+            transition: all 0.5s ease-in 0.25s;
+            user-select: text;
+            visibility: hidden;
+            width: min-content;
+            z-index: 100;
+        }
+
+        #BBXActionStrom .bbx-Popover-body--bottom {
+            bottom: auto;
+            top: calc(100% + 10px);
+        }
+
+        #BBXActionStrom .bbx-Popover-body--center {
+            left: 50%;
+            right: auto;
+            transform: translateX(-50%);
+        }
+
+        #BBXActionStrom .bbx-Popover-body--right {
+            left: auto;
+            right: 0;
+        }
+
+        #BBXActionStrom .bbx-Popover-body:hover,
+        #BBXActionStrom .bbx-Popover:hover > .bbx-Popover-body {
+            display: block;
+            opacity: 1;
+            transition: all ease-out .25s;
+            visibility: visible;
+        }
+
+        #BBXActionStrom .bbx-Popover-init {
+            cursor: pointer;
+            display: inline;
+        }
+
+        @media (min-width: 30em) {
+            #BBXActionStrom .bbx-Popover-body {
+                display:block
+            }
+
+            #BBXActionStrom .bbx-Popover-init--bordered,
+            #BBXActionStrom .bbx-Popover-body ~ .bbx-Popover-init {
+                border-bottom: 1px dotted gray;
+                cursor: pointer
+            }
+        }
+
+
+
+
+
+
+        #BBXActionStrom .bbx-Action-content {
+            align-content: flex-start;
+            align-items: flex-start;
+            display: flex;
+            flex-grow: 1;
+            flex-wrap: wrap;
+            margin: -20px 0 0 -20px;
+            padding: 0;
+        }
+
+        @media (min-width: 768px) {
+            #BBXActionStrom .bbx-Action-content {
+                align-items: center;
+            }
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-block,
+        #BBXActionStrom .bbx-Action-brick {
+            align-content: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            flex: 0 0 100%;
+            margin: 0;
+            padding: 20px 0 0 20px;
+        }
+
+        #BBXActionStrom .bbx-Action-block--jacket,
+        #BBXActionStrom .bbx-Action-brick--jacket {
+            padding-left: 0;
+            padding-top: 0;
+        }
+
+        @media (min-width: 480px) {
+            #BBXActionStrom .bbx-Action-brick--control {
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #BBXActionStrom .bbx-Action-block--form {
+                align-items: flex-end;
+            }
+
+            #BBXActionStrom .bbx-Action-brick--control,
+            #BBXActionStrom .bbx-Action-brick--submit {
+                flex-basis: 33.33333%;
+                max-width: 33.33333%;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            #BBXActionStrom .bbx-Action-block--paper {
+                flex-basis: 33.33333%;
+                max-width: 33.33333%;
+            }
+
+            #BBXActionStrom .bbx-Action-block--form {
+                flex-basis: 66.66666%;
+                max-width: 66.66666%;
+            }
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-caption:first-child,
+        #BBXActionStrom .bbx-Action-input:first-child,
+        #BBXActionStrom .bbx-Action-legend:first-child,
+        #BBXActionStrom .bbx-Action-list:first-child,
+        #BBXActionStrom .bbx-Action-title:first-child {
+            margin-top: 0;
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-title {
+            font-size: 25px;
+            letter-spacing: -0.55px;
+            line-height: 1.2;
+            margin-top: 15px;
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-legend {
+            align-items: center;
+            display: flex;
+            font-size: 14px;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        #BBXActionStrom .bbx-Action-legend > .icon {
+            display: flex;
+            margin-left: 5px;
+        }
+
+        #BBXActionStrom .bbx-Action-legend svg {
+            fill: rgba(59, 128, 152, 0.36);
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-input {
+            flex-grow: 1;
+            margin-top: 15px;
+        }
+
+
+
+        #BBXActionStrom .bbx-Action-submit {
+            background-color: rgb(226, 93, 48);
+            border: 0;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            margin: 0;
+            padding: 8px 15px;
+            width: 100%;
+        }
+
+        #BBXActionStrom .bbx-Action-submit:focus {
+            outline: none;
+        }
+
+        #BBXActionStrom .bbx-Action-submit:hover {
+            background-color: rgb(226, 93, 48, 0.9);
+        }
+
+    </style>
+</head>
+<body>
+
+<form class="bbx-Action bbx-Action--wax" id="BBXActionStrom" action="https://www.bbx.de/strom/vergleichsrechner/" method="get" target="_blank">
+
+    <div class="bbx-Action-content">
+
+        <div class="bbx-Action-block bbx-Action-block--paper">
+            <div class="bbx-Action-title">Strom Vergleichen und bis zu 500 € im Jahr sparen.</div>
+        </div>
+
+        <div class="bbx-Action-block bbx-Action-block--form bbx-Action-block--jacket">
+
+            <div class="bbx-Action-brick bbx-Action-brick--control">
+
+                <div class="bbx-Action-legend">
+                    <span class="text">Verbrauch</span>
+                </div>
+
+
+
+                <div class="bbx-Action-input bbx-FormText">
+                    <div class="bbx-FormText-wrapper">
+                        <input class="bbx-FormText-input" placeholder="2000" name="c24pp_totalconsumption" type="number">
+                    </div>
+                    <div class="bbx-FormText-label">kWh/Jahr</div>
+                </div>
+
+            </div>
+
+
+
+            <div class="bbx-Action-brick bbx-Action-brick--control">
+
+                <div class="bbx-Action-legend">
+                    <span class="text">Postleitzahl</span>
+                </div>
+
+                <div class="bbx-Action-input bbx-FormText">
+                    <input class="bbx-FormText-input" placeholder="z.B. 20095" name="c24pp_zipcode" type="number">
+                </div>
+
+            </div>
+
+
+
+            <div class="bbx-Action-brick bbx-Action-brick--submit">
+                <button class="bbx-Action-submit c-Btn" type="submit">Jetzt vergleichen</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+</body>
+</html>
