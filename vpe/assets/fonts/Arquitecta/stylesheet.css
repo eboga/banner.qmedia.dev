@@ -1,0 +1,143 @@
+@font-face {
+	font-family: 'Arquitecta Book';
+	src: local('Arquitecta Book Italic'), local('ArquitectaBook-Italic'),
+		url('ArquitectaBook-Italic.woff2') format('woff2'),
+		url('ArquitectaBook-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Light Italic'), local('ArquitectaLight-Italic'),
+		url('ArquitectaLight-Italic.woff2') format('woff2'),
+		url('ArquitectaLight-Italic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Bold Italic'), local('ArquitectaBold-Italic'),
+		url('ArquitectaBold-Italic.woff2') format('woff2'),
+		url('ArquitectaBold-Italic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta Book';
+	src: local('Arquitecta Book'), local('ArquitectaBook'),
+		url('ArquitectaBook.woff2') format('woff2'),
+		url('ArquitectaBook.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Bold'), local('ArquitectaBold'),
+		url('ArquitectaBold.woff2') format('woff2'),
+		url('ArquitectaBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Black'), local('ArquitectaBlack'),
+		url('ArquitectaBlack.woff2') format('woff2'),
+		url('ArquitectaBlack.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta'),
+		url('Arquitecta.woff2') format('woff2'),
+		url('Arquitecta.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Thin Italic'), local('ArquitectaThin-Italic'),
+		url('ArquitectaThin-Italic.woff2') format('woff2'),
+		url('ArquitectaThin-Italic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Medium'), local('ArquitectaMedium'),
+		url('ArquitectaMedium.woff2') format('woff2'),
+		url('ArquitectaMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Thin'), local('ArquitectaThin'),
+		url('ArquitectaThin.woff2') format('woff2'),
+		url('ArquitectaThin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Light'), local('ArquitectaLight'),
+		url('ArquitectaLight.woff2') format('woff2'),
+		url('ArquitectaLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Medium Italic'), local('ArquitectaMedium-Italic'),
+		url('ArquitectaMedium-Italic.woff2') format('woff2'),
+		url('ArquitectaMedium-Italic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Black Italic'), local('ArquitectaBlack-Italic'),
+		url('ArquitectaBlack-Italic.woff2') format('woff2'),
+		url('ArquitectaBlack-Italic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Heavy Italic'), local('ArquitectaHeavy-Italic'),
+		url('ArquitectaHeavy-Italic.woff2') format('woff2'),
+		url('ArquitectaHeavy-Italic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Italic'), local('Arquitecta-Italic'),
+		url('Arquitecta-Italic.woff2') format('woff2'),
+		url('Arquitecta-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Arquitecta';
+	src: local('Arquitecta Heavy'), local('ArquitectaHeavy'),
+		url('ArquitectaHeavy.woff2') format('woff2'),
+		url('ArquitectaHeavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
